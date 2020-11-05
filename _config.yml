@@ -1,4 +1,4 @@
-title: 김양의 우당탕탕 개발일지
+title: 김냥의 우당탕탕 개발일지
 author: jju95
 email: jju95@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
@@ -12,7 +12,7 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
 plainwhite:
-  name: H양
+  name: 김냥
   tagline: Developer
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
