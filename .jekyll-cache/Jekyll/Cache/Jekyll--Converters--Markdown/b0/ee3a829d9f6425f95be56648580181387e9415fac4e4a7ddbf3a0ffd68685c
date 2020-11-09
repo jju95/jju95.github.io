@@ -1,0 +1,18 @@
+I"�<h1 id="windows10에서-docker와-gitblog-연동-tip">windows10에서 docker와 gitBlog 연동 Tip…?</h1>
+
+<p><br /></p>
+<center>이 글을 보시는 분들 대부분은 아마도 windows10 환경에서 docker를 사용해서</center>
+<center><b> 마! 깃헙 블로그 함 해볼까ㅋ </b></center>
+<center>하시다가 다양한 오류가 난 후 빡쳐서</center>
+<center>구글링하시다가 우연히 들어오셨을것같다..</center>
+<p><br /><br /></p>
+<center><img src="https://lh3.googleusercontent.com/proxy/vW596vSAAukDSGqXhzDcaLIa1wov-X8K4KLBkPwzlaaSZrW_PMKSzJdSZg0ycQ_iINpDMGe97IzMEDL7n1PT1idf6tGeR7rNbjDwzUQO8iDzt7agSWBBDQF9vKaB5geGCCPKPfmA_ErwFlhsVlGVK1LFR0inquifwQ" alt="슬픈개구리.." width="350" height="300" /></center>
+<center>ㅎㅋ... 나도 그랬다</center>
+<p><br /></p>
+<center>자 이제 서론은 집어치우도록 하자</center>
+<center>우선 나의 개발환경은 이렇다</center>
+<center><ins>windows10 + docker + vscode</ins>이고</center>
+<center>대충 docker로 jekyll image를 다운받아서 컨테이너로 올리는거까지 했다는 가정하에</center>
+<center><font color="#D8D8D8">( 못하셨던 분들을 위해 참조용 blog : <a href="https://velog.io/@jundragon/visual-studio-code%EC%97%90%EC%84%9C-docker%EB%A1%9C-jekyll-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A1%9C%EC%BB%AC-%ED%99%98%EA%B2%BD-%EB%A7%8C%EB%93%A4%EA%B8%B0" target="_blank">Link</a>) </font><center>
+</center></center>
+:ET

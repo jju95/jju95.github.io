@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Raleway:400,700" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<title>windows10에서 docker와 gitBlog 연동 Tip...? (작성중)</title>
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>windows10에서 docker와 gitBlog 연동 Tip…? (작성중) | 김냥의 우당탕탕 개발일지</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="windows10에서 docker와 gitBlog 연동 Tip…? (작성중)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="이 글을 보시는 분들 대부분은 아마도 windows10 환경에서 docker를 사용해서 마! 깃헙 블로그 함 해볼까ㅋ 하시다가 다양한 오류가 난 후 빡쳐서 구글링하시다가 우연히 들어오셨을것같다.. ㅎㅋ... 나도 그랬다 뭐 이리 복잡한지 이리저리 설정 맞추는거에 대해 시간을 엄청 소비했지 ㅎㅎ..ㅋ... 자 이제 서론은 집어치우도록 하자 우선 나의 개발환경은 이렇다 windows10 + docker + vscode이고 대충 docker로 jekyll image를 다운받아서 컨테이너로 올리는거까지 했다는 가정하에 ( 못하셨던 분들을 위해 참조용 blog : click ) 내가 경험한 오류를 정리해보도록 하겠다. 1. 로컬 환경셋팅 하면 뭐해 ?도커 자체가 안되는걸? 이게 무슨말이냐면.." />
+<meta property="og:description" content="이 글을 보시는 분들 대부분은 아마도 windows10 환경에서 docker를 사용해서 마! 깃헙 블로그 함 해볼까ㅋ 하시다가 다양한 오류가 난 후 빡쳐서 구글링하시다가 우연히 들어오셨을것같다.. ㅎㅋ... 나도 그랬다 뭐 이리 복잡한지 이리저리 설정 맞추는거에 대해 시간을 엄청 소비했지 ㅎㅎ..ㅋ... 자 이제 서론은 집어치우도록 하자 우선 나의 개발환경은 이렇다 windows10 + docker + vscode이고 대충 docker로 jekyll image를 다운받아서 컨테이너로 올리는거까지 했다는 가정하에 ( 못하셨던 분들을 위해 참조용 blog : click ) 내가 경험한 오류를 정리해보도록 하겠다. 1. 로컬 환경셋팅 하면 뭐해 ?도커 자체가 안되는걸? 이게 무슨말이냐면.." />
+<link rel="canonical" href="http://0.0.0.0:4000/2020/11/06/windows-docker.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/2020/11/06/windows-docker.html" />
+<meta property="og:site_name" content="김냥의 우당탕탕 개발일지" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-11-06T00:00:00-06:00" />
+<script type="application/ld+json">
+{"headline":"windows10에서 docker와 gitBlog 연동 Tip…? (작성중)","url":"http://0.0.0.0:4000/2020/11/06/windows-docker.html","dateModified":"2020-11-06T00:00:00-06:00","datePublished":"2020-11-06T00:00:00-06:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/2020/11/06/windows-docker.html"},"description":"이 글을 보시는 분들 대부분은 아마도 windows10 환경에서 docker를 사용해서 마! 깃헙 블로그 함 해볼까ㅋ 하시다가 다양한 오류가 난 후 빡쳐서 구글링하시다가 우연히 들어오셨을것같다.. ㅎㅋ... 나도 그랬다 뭐 이리 복잡한지 이리저리 설정 맞추는거에 대해 시간을 엄청 소비했지 ㅎㅎ..ㅋ... 자 이제 서론은 집어치우도록 하자 우선 나의 개발환경은 이렇다 windows10 + docker + vscode이고 대충 docker로 jekyll image를 다운받아서 컨테이너로 올리는거까지 했다는 가정하에 ( 못하셨던 분들을 위해 참조용 blog : click ) 내가 경험한 오류를 정리해보도록 하겠다. 1. 로컬 환경셋팅 하면 뭐해 ?도커 자체가 안되는걸? 이게 무슨말이냐면..","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+  <body>
+    <main class="container">
+      <section class="about">
+        <a href="/"><img src="/assets/test.gif" alt="김냥"></a>
+        <h2 id="title">
+          <a href="/">김냥</a>
+        </h2>
+        <p class="tagline">Developer</p>
+        <ul class="social"><a href="https://github.com/jju95">
+              <li>
+                <i class="icon-github-circled"></i>
+              </li>
+            </a></ul><p>&copy;
+          2020</p>
+      </section>
+      <section class="content">
+        <div class="post-container">
+  <a class="post-link" href="/2020/11/06/windows-docker.html">
+    <h2 class="post-title">windows10에서 docker와 gitBlog 연동 Tip...? (작성중)</h2>
+  </a>
+  <div class="post-meta">
+    <ul class="post-categories"></ul>
+    <div class="post-date"><i class="icon-calendar"></i>Nov 6, 2020</div>
+  </div>
+  <div class="post">
+    <center>이 글을 보시는 분들 대부분은 아마도 windows10 환경에서 docker를 사용해서</center>
+<center><b> 마! 깃헙 블로그 함 해볼까ㅋ </b></center>
+<center>하시다가 다양한 오류가 난 후 빡쳐서</center>
+<center>구글링하시다가 우연히 들어오셨을것같다..</center>
+<p><br /><br /></p>
+<center><img src="https://lh3.googleusercontent.com/proxy/vW596vSAAukDSGqXhzDcaLIa1wov-X8K4KLBkPwzlaaSZrW_PMKSzJdSZg0ycQ_iINpDMGe97IzMEDL7n1PT1idf6tGeR7rNbjDwzUQO8iDzt7agSWBBDQF9vKaB5geGCCPKPfmA_ErwFlhsVlGVK1LFR0inquifwQ" alt="슬픈개구리.." width="350" height="300" /></center>
+<center>ㅎㅋ... 나도 그랬다</center>
+<center>뭐 이리 복잡한지 이리저리 설정 맞추는거에 대해 시간을 엄청 소비했지 ㅎㅎ..ㅋ...</center>
+<p><br /></p>
+<center>자 이제 서론은 집어치우도록 하자</center>
+<center>우선 나의 개발환경은 이렇다</center>
+<center><ins>windows10 + docker + vscode</ins>이고</center>
+<center>대충 docker로 jekyll image를 다운받아서 컨테이너로 올리는거까지 했다는 가정하에</center>
+<center><font color="#D8D8D8">( 못하셨던 분들을 위해 참조용 blog : <a href="https://velog.io/@jundragon/visual-studio-code%EC%97%90%EC%84%9C-docker%EB%A1%9C-jekyll-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A1%9C%EC%BB%AC-%ED%99%98%EA%B2%BD-%EB%A7%8C%EB%93%A4%EA%B8%B0" target="_blank">click</a> )</font><center><br /><br />
+<center>내가 경험한 오류를 정리해보도록 하겠다.</center><br />
+<center><li>1. 로컬 환경셋팅 하면 뭐해 ?<br />도커 자체가 안되는걸?</li></center>
+<center>이게 무슨말이냐면..</center>
+</center></center>
+
+  </div></div>
+
+      </section>
+    </main></body>
+</html>

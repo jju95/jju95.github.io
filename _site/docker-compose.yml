@@ -1,10 +1,9 @@
-version: "3.3"
+version: "3.8"
 
 services:
   blog:
     image: jekyll/jekyll:latest
-    #command: jekyll serve --force_polling --drafts --livereload --trace
-    command: jekyll serve --watch --incremental
+    command: jekyll serve --force_polling --drafts --livereload --trace
     ports:
       - "4000:4000"
     volumes:
