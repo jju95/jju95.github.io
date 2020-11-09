@@ -1,22 +1,39 @@
 ---
 layout: post
-title: "windows10에서 docker와 gitBlog 연동 Tip...? (작성중)"
+title: "windows10에서 docker와 gitBlog 연동 Tip...?"
 author: ["김냥"]
 abstract: "TEST POST!"
 draft: "yes"
 ---
-<center>이 글을 보시는 분들 대부분은 아마도 windows10 환경에서 docker를 사용해서</center>
-<center><b> 마! 깃헙 블로그 함 해볼까ㅋ </b></center>
-<center>하시다가 다양한 오류가 난 후 빡쳐서</center>
-<center>구글링하시다가 우연히 들어오셨을것같다..</center><br><br>
-<center><img src="https://lh3.googleusercontent.com/proxy/vW596vSAAukDSGqXhzDcaLIa1wov-X8K4KLBkPwzlaaSZrW_PMKSzJdSZg0ycQ_iINpDMGe97IzMEDL7n1PT1idf6tGeR7rNbjDwzUQO8iDzt7agSWBBDQF9vKaB5geGCCPKPfmA_ErwFlhsVlGVK1LFR0inquifwQ" alt="슬픈개구리.." width="350" height="300"></center>
-<center>ㅎㅋ... 나도 그랬다</center>
-<center>뭐 이리 복잡한지 이리저리 설정 맞추는거에 대해 시간을 엄청 소비했지 ㅎㅎ..ㅋ...</center><br>
-<center>자 이제 서론은 집어치우도록 하자</center>
-<center>우선 나의 개발환경은 이렇다</center>
-<center><ins>windows10 + docker + vscode</ins>이고</center>
+<center>이 글을 보시는 분들</center>
+<center>블로그 하나 맹글기 참 까다롭져...ㅎ</center>
+<center>사실 <b>별거 아니겠지,, ㅋ</b> 하시다가 제법 다양한 오류 때문에</center>
+<center>구글링하시다가 우연히 들어오셨을것같다..^=^</center><br>
+<center><img src="../assets/cryFrog.png" alt="슬픈개구리.." width="350" height="300"></center>
+<center>ㅎㅋ... 나도 그랬읍니다ㅎ...</center>
+<center>뭐 이리 복잡한지 이리저리 설정 맞추는거에 대해 시간을 엄청 소비했다 ㅎㅎ..ㅋ...</center><br>
+<center>여튼 이제 서론은 집어치우도록 하고</center>
+<center>내 개발환경에 대해서 말하자면, 우선 나의 개발환경은 이렇다</center>
+<center><ins>windows10 + docker + vscode</ins></center>
 <center>대충 docker로 jekyll image를 다운받아서 컨테이너로 올리는거까지 했다는 가정하에</center>
-<center><font color="#D8D8D8">( 못하셨던 분들을 위해 참조용 blog : <a href="https://velog.io/@jundragon/visual-studio-code%EC%97%90%EC%84%9C-docker%EB%A1%9C-jekyll-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A1%9C%EC%BB%AC-%ED%99%98%EA%B2%BD-%EB%A7%8C%EB%93%A4%EA%B8%B0" target="_blank">click</a> )</font><center><br><br>
-<center>내가 경험한 오류를 정리해보도록 하겠다.</center><br>
-<center><li>1. 로컬 환경셋팅 하면 뭐해 ?<br>도커 자체가 안되는걸?</li></center>
-<center>이게 무슨말이냐면..</center>
+<center><font color="#D8D8D8">( 못하셨던 분들을 위해 참조용 blog : <a href="https://velog.io/@jundragon/visual-studio-code%EC%97%90%EC%84%9C-docker%EB%A1%9C-jekyll-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A1%9C%EC%BB%AC-%ED%99%98%EA%B2%BD-%EB%A7%8C%EB%93%A4%EA%B8%B0" target="_blank">click</a> )</font><center><br>
+<center>내가 경험한 오류를 정리해보도록 하겠다.</center>
+<center>말 그대로 tip일뿐 백프로 맞는단 보장 Nooooo.. <br>그리고 설치과정들은 쿨하게 pass함 ㅇㅇ. </center>
+<center>대신 내가 참고했던 블로그 주소를 남겨두겠음 가서 보세요.. 림들아..</center><br><br>
+<center><b>오류 1. 로컬 환경셋팅 하면 뭐해 ? 도커 자체가 안되는걸?</b><br>( docker-compose.yml => compose up 에러 )</center>
+<center>이런 오류가 있다구? 하시는 분들 있을거 안다 ㅇㅇ</center>
+<center>그건 도잘알이신분들이고.. 나는 도린이기 때문에 저런 오류났을때 허둥지둥x816번 함</center>
+<center>무튼 로그에서 linux 지원을 못한다 어쩌구 저쩌구 웅앵웅이런 로그가 찍혀있으시다?<br>그럼 곧 바로 wsl2 설치하시면 된다 ㅇㅇ..</center>
+<center><font color="#D8D8D8">( 참조용 blog : <a href="https://www.44bits.io/ko/post/wsl2-install-and-basic-usage" target="_blank">click</a> )</font></center><br><br>
+<center><b>오류 2. 로컬로 서버 띄우기는 성공했음 ㅇㅇ.. 근데 로컬이랑 서버랑 다르네? 어어? </b></center>
+<center>아니 로컬에서 작성했는데 로컬에서 확인이 안된다?</center>
+<center>어라라..근데 실서버에서는 보여지네?</center>
+<center>하시는 분들</center>
+<center>어서빨리 깔려있는 jekyll 버전을 확인해보십쇼..</center>
+<center>확인하셨나욤?<br>그럼 맹글어준 <b>docker-compose.yml</b> 파일에서</center>
+<center>맨 윗단에 있는 version을 밑에 첨부해준 url을 눌러서 날짜와 버전을 확인하신후</center>
+<center>맞는 버전으로 수정해주시길 바랍니다.. </center>
+<center>현재 제 버전은 <code>version: "3.8"</code> << 요거네여 ㅎ..</center>
+<center><font color="#D8D8D8">( 도커 compose file 버전정리 : <a href="https://docs.docker.com/compose/compose-file/" target="_blank">click</a> )</font></center><br><br>
+<center>여튼 이 글은 또 다른 버그가 생길경우 바로바로 추가하겠음다 ^^.</center>
+<center><img src="../assets/jerry.gif" alt="인사짤" width="350" height="300"></center>
