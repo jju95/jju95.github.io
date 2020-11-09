@@ -31,8 +31,9 @@ draft: "yes"
 <center>하시는 분들</center>
 <center>어서빨리 깔려있는 jekyll 버전을 확인해보십쇼..</center>
 <center>확인하셨나욤?<br>그럼 맹글어준 <b>docker-compose.yml</b> 파일에서</center>
-<center>맨 윗단에 있는 version을 밑에 첨부해준 url을 눌러서 날짜와 버전을 확인하신후</center>
-<center>맞는 버전으로 수정해주시길 바랍니다.. </center>
+<center>맨 윗단에 있는 version을 밑에 있는 url을 눌러서<center>
+<center>docker-hub에서 다운받으신 jekyll의 날짜와 버전을 확인하신후</center>
+<center>제공해주는 compose 버전으로 수정해주시길 바랍니다.. </center>
 <center>현재 제 버전은 <code>version: "3.8"</code> << 요거네여 ㅎ..</center>
 <center><font color="#D8D8D8">( 도커 compose file 버전정리 : <a href="https://docs.docker.com/compose/compose-file/" target="_blank">click</a> )</font></center><br><br>
 <center>여튼 이 글은 또 다른 버그가 생길경우 바로바로 추가하겠음다 ^^.</center>
