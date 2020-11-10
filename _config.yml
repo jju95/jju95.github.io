@@ -54,3 +54,5 @@ theme: plainwhite
 plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
+
+google_analytics : G-1429FHJS25
